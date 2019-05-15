@@ -12,6 +12,11 @@
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc'",
     "compodoc:s": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc' --theme material -s -o"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.0",
@@ -33,11 +38,14 @@
     "@angular/cli": "~7.1.4",
     "@angular/compiler-cli": "~7.1.0",
     "@angular/language-service": "~7.1.0",
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
     "@compodoc/compodoc": "^1.1.9",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "husky": "^2.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
