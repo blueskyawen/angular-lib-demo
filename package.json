@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng build ng-demo-lib"
+    "build:lib": "ng build ng-demo-lib",
+    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc'",
+    "compodoc:s": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc' --theme material -s -o"
   },
   "private": true,
   "dependencies": {
@@ -31,9 +33,10 @@
     "@angular/cli": "~7.1.4",
     "@angular/compiler-cli": "~7.1.0",
     "@angular/language-service": "~7.1.0",
-    "@types/node": "~8.9.4",
+    "@compodoc/compodoc": "^1.1.9",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
