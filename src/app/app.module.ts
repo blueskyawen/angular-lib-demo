@@ -5,15 +5,19 @@ import { NgDemoLibModule } from "ng-demo-lib";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonDemoComponent } from './button-demo/button-demo.component';
+import { LoadingDemoComponent } from './loading-demo/loading-demo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonDemoComponent,
+    LoadingDemoComponent
   ],
   imports: [
     BrowserModule,
     NgDemoLibModule.forRoot({
-      dataUrl: `https://jsonplaceholder.typicode.com/todos/1`
+      dataUrl: `https://www.blueskyawen.com:3200`
     }),
     AppRoutingModule
   ],

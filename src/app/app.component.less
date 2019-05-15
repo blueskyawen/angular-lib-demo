@@ -1,0 +1,36 @@
+.app-body {
+  width: 100%;
+  padding: 10px 30px;
+  .router-button {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    span {
+      width: 120px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      margin-right: 20px;
+      display: inline-block;
+      border:solid 1px #e6e6e6;
+      font-size: 16px;
+      color: #999;
+      cursor: pointer;
+      border-radius: 6px;
+      &:hover {
+        background-color: #ccc;
+        color: #666;
+      }
+      &.Active {
+        background-color: #3399ff;
+        color: #fff;
+      }
+    }
+  }
+}

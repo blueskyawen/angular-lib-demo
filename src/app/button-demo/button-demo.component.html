@@ -1,0 +1,56 @@
+<h2 class="title">按钮组</h2>
+<p>按钮用来进行用户操作与交互</p>
+<h3>1. 普通按钮</h3>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button>普通按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'cancel'">取消按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [style]="'max'">普通按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'cancel'" [style]="'max'">取消按钮</nd-button>
+</div>
+
+<h3>2. 添加按钮</h3>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'add'">添加按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'add'" [style]="'max'">添加按钮</nd-button>
+</div>
+
+<h3>3. 重要按钮</h3>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'major'">重要按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'major'" [style]="'max'">重要按钮</nd-button>
+</div>
+
+<h3>4. 禁用按钮</h3>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [disabled]="true">禁用按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'add'" [disabled]="true">禁用按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'major'" [disabled]="true">禁用按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'cancel'" [disabled]="true">禁用按钮</nd-button>
+</div>
+
+<h3>5. 状态按钮</h3>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [loading]="true">状态按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'add'" [loading]="true">状态按钮</nd-button>
+</div>
+<div style="margin-right: 10px;display: inline-block;">
+  <nd-button [type]="'major'" [loading]="true">状态按钮</nd-button>
+</div>
