@@ -11,7 +11,10 @@
     "build:lib": "ng build ng-demo-lib",
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc'",
     "compodoc:s": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n 'My lib_doc' --theme material -s -o",
-    "extract": "ngx-translate-extract --input ./src/app --output ./src/assets/i18n/zh-cn.json ./src/assets/i18n/en.json --clean --sort --format-indentation ' '"
+    "extract": "ngx-translate-extract --input ./src/app --output ./src/assets/i18n/zh-cn.json ./src/assets/i18n/en.json --clean --sort --format-indentation ' '",
+    "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/angular-lib-demo/stats.json",
+    "map-explorer": "ng build --prod --source-map",
+    "check-explorer": "npx source-map-explorer dist/angular-lib-demo/main.27c1023a9f51357c40b3.js"
   },
   "husky": {
     "hooks": {
@@ -59,10 +62,12 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
+    "source-map-explorer": "^1.8.0",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "webpack-bundle-analyzer": "^3.3.2"
   }
 }
