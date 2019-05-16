@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -6,10 +6,11 @@ import { TranslateService } from "@ngx-translate/core";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-lib-demo';
   lang: string = '';
   langTitle: string = '英文';
+  libName: string = '';
   constructor(private translate: TranslateService) {
     if(!localStorage.getItem('app_lang')) {
       this.lang = 'zh-cn';
@@ -17,8 +18,15 @@ export class AppComponent {
     } else {
       this.lang = localStorage.getItem('app_lang');
     }
+    this.langTitle = this.lang === 'zh-cn' ? '英文' : '中文';
     this.translate.setDefaultLang(this.lang);
     this.translate.use(this.lang);
+  }
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.libName = this.translate.instant('button');
+    },50);
   }
 
   swithLang() {
@@ -27,6 +35,7 @@ export class AppComponent {
     } else {
       this.lang = 'zh-cn';
     }
+    this.langTitle = this.lang === 'zh-cn' ? '英文' : '中文';
     localStorage.setItem('app_lang', this.lang);
     location.reload();
   }
