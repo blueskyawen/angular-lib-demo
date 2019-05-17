@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-button-demo',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonDemoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) {
+    this.appService.setTitle('Angular 按钮组');
+  }
 
   ngOnInit() {
   }

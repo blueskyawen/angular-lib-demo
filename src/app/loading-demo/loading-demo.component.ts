@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AppService } from '../app.service';
 /**
  加载中--LoadingDemoComponent
  */
@@ -12,7 +12,9 @@ export class LoadingDemoComponent implements OnInit {
   /**
    * @ignore
    */
-  constructor() { }
+  constructor(private appService: AppService) {
+    this.appService.setTitle('Angular 加载');
+  }
 
   ngOnInit() {
   }

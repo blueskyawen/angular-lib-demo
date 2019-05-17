@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from "@ngx-translate/core";
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-goodbye-cambridge',
@@ -9,7 +10,10 @@ import { TranslateService } from "@ngx-translate/core";
 export class GoodbyeCambridgeComponent implements OnInit {
   poetryTexts: any[] = [];
   lineNum: number = 28;
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService,
+              private appService: AppService) {
+    this.appService.setTitle(this.translate.instant('cambridge.title'));
+  }
 
   ngOnInit() {
     let textItems: string[] = [];
