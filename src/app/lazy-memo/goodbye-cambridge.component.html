@@ -1,0 +1,14 @@
+<div class="acticle-container">
+  <div class="acticle-content">
+    <div class="acticle-head">{{"cambridge.title" | translate}}</div>
+    <div class="acticle-autor">{{"cambridge.autor" | translate}}</div>
+    <div class="acticle">
+      <div class="aticle-item" *ngFor="let poetry of poetryTexts">
+        <p *ngFor="let textItem of poetry.text">{{textItem}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="acticle-img">
+    <img src="http://images.china.cn/attachement/jpg/site1007/20110318/000cf1a48b7f0eed00c502.jpg">
+  </div>
+</div>

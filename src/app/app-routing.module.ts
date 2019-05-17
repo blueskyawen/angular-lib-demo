@@ -6,7 +6,11 @@ import { LoadingDemoComponent } from './loading-demo/loading-demo.component';
 const routes: Routes = [
   { path: '',   redirectTo: '/button', pathMatch: 'full' },
   { path: 'button', component: ButtonDemoComponent },
-  { path: 'loading', component: LoadingDemoComponent }
+  { path: 'loading', component: LoadingDemoComponent },
+  {
+    path: "lazyDemo",
+    loadChildren: "./lazy-memo/lazy-memo.module#LazyMemoModule"
+  }
 ];
 
 @NgModule({

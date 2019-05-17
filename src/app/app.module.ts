@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ButtonDemoComponent } from './button-demo/button-demo.component';
 import { LoadingDemoComponent } from './loading-demo/loading-demo.component';
 
-import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateModule, TranslateLoader, TranslateService } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
 // 支持AOT
@@ -38,7 +38,7 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

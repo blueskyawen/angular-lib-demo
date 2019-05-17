@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'angular-lib-demo';
   lang: string = '';
   langTitle: string = '英文';
-  libName: string = '';
+  lazyDemoName: string = '';
   constructor(private translate: TranslateService) {
     if(!localStorage.getItem('app_lang')) {
       this.lang = 'zh-cn';
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.libName = this.translate.instant('button');
+      this.lazyDemoName = this.translate.instant('lazyDemo');
     },50);
   }
 

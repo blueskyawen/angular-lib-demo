@@ -1,17 +1,17 @@
-<h2 class="title">加载等待</h2>
-<p>加载等待用于访问初始访问页面的加载等候，以及从后端获取数据的等待处理</p>
+<h2 class="title">{{"loadD.name" | translate}}</h2>
+<p>{{"loadD.title" | translate}}</p>
 
-<h3>1. 普通加载中</h3>
+<h3>1. {{"loadD.normal" | translate}}</h3>
 <nd-loading [type]="'normal'" [loadSize]="'max'"></nd-loading>
 <nd-loading [type]="'normal'" [loadSize]="'medium'"></nd-loading>
 <nd-loading [loadSize]="'min'"></nd-loading>
 
-<h3>2. 四叶加载中</h3>
+<h3>2. {{"loadD.cover" | translate}}</h3>
 <nd-loading [type]="'clover'" [loadSize]="'max'"></nd-loading>
 <nd-loading [type]="'clover'" [loadSize]="'medium'"></nd-loading>
 <nd-loading [type]="'clover'" [loadSize]="'min'"></nd-loading>
 
-<h3>3. 水平加载等待</h3>
+<h3>3. {{"loadD.horizon" | translate}}</h3>
 <nd-loading [type]="'horizontal'" [loadSize]="'max'" style="margin:10px 30px;"></nd-loading>
 <nd-loading [type]="'horizontal'" [loadSize]="'medium'" style="margin:10px 30px;"></nd-loading>
 <nd-loading [type]="'horizontal'" [loadSize]="'min'" style="margin:10px 30px;"></nd-loading>

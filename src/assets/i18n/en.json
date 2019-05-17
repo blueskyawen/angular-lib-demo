@@ -1,4 +1,54 @@
 {
  "button": "Button Group",
- "loading": "Loading"
+ "loading": "Loading",
+ "lazyDemo": "Lazy Module",
+ "buttonD": {
+  "name": "Button Group",
+  "title": "Buttons are used for user actions and interactions",
+  "normal": "Normal",
+  "cancel": "Cancel",
+  "add": "Add",
+  "major": "Major",
+  "disable": "Disable",
+  "state": "Loading"
+ },
+ "loadD": {
+  "name": "Loading",
+  "title": "Loading for access to the initial access page, and wait for processing to get data from the backend",
+  "normal": "Normal",
+  "cover": "Clover",
+  "horizon": "Horizontal"
+ },
+ "cambridge": {
+  "title": "Saying Good-bye to Cambridge Again",
+  "autor": "By Xu Zhimo",
+  "text1": "Very quietly I take my leave",
+  "text2": "As quietly as I came here;",
+  "text3": "Quietly I wave good-bye",
+  "text4": "To the rosy clouds in the western sky.",
+  "text5": "The golden willows by the riverside",
+  "text6": "Are young brides in the setting sun;",
+  "text7": "Their reflections on the shimmering waves",
+  "text8": "Always linger in the depth of my heart.",
+  "text9": "The floating heart growing in the sludge",
+  "text10": "Sways leisurely under the water;",
+  "text11": "In the gentle waves of Cambridge",
+  "text12": "I would be a water plant!",
+  "text13": "That pool under the shade of elm trees",
+  "text14": "Holds not water but the rainbow from the sky;",
+  "text15": "Shattered to pieces among the duckweeds",
+  "text16": "Is the sediment of a rainbow-like dream.",
+  "text17": "To seek a dream? Just to pole a boat upstream",
+  "text18": "To where the green grass is more verdant;",
+  "text19": "Or to have the boat fully loaded with starlight",
+  "text20": "And sing aloud in the splendor of starlight.",
+  "text21": "But I cannot sing aloud",
+  "text22": "Quietness is my farewell music;",
+  "text23": "Even summer insects heap silence for me",
+  "text24": "Silent is Cambridge tonight!",
+  "text25": "Very quietly I take my leave",
+  "text26": "As quietly as I came here;",
+  "text27": "Gently I flick my sleeves",
+  "text28": "Not even a wisp of cloud will I bring away"
+ }
 }
